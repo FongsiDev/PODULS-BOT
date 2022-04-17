@@ -1,28 +1,29 @@
 {
    "token": "",
-   "prefix": "t!",
+   "prefix": "-",
    "ownerIDS": [
-      "442355791412854784"
+      "678106287820505089"
    ],
-   "memer_api": "get it from: https://discord.gg/Mc2FudJkgP",
+   "memer_api": "fTJLBpkPvyZ",
    "status": {
-      "text": "{prefix}help | milrato.eu",
-      "text2": "by: discord.gg/milrato",
-      "type": "PLAYING",
-      "url": "https://twitch.tv/milratoDiscordBot"
+      "text": "{prefix}help | Fongsi",
+      "text2": "Support: https://discord.gg/FBfymDfrpT",
+      "type": "WATCHING",
+      "url": "https://twitch.tv/#"
    },
    "clientsettings": {
       "nodes": [
          {
-            "host": "localhost",
-            "port": 2333,
-            "password": "youshallnotpass"
+            "host": "node2.getalavalink.tk",
+            "port": 443,
+            "secure": true,
+            "password": "decoders"
          }
       ]
    },
    "spotify": {
-      "clientSecret": "",
-      "clientID": ""
+      "clientSecret": "053469ffeb3844079fab734ebf3090c2",
+      "clientID": "bf5ee2a72bae40ffadc71a47280e5ff9"
    },
    "settings": {
       "leaveOnEmpty_Channel": {

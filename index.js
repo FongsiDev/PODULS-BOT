@@ -33,7 +33,7 @@ const advertisement = require("./botconfig/advertisement.json");
 const { delay } = require("./handlers/functions");
 const Meme = require("memer-api");
 require('dotenv').config();
-
+global.dc = "https://discord.gg/EPWQdQ7w"
 
 /**********************************************************
  * @param {2} CREATE_THE_DISCORD_BOT_CLIENT with some default settings
@@ -59,14 +59,14 @@ const client = new Discord.Client({
     Discord.Intents.FLAGS.GUILD_PRESENCES,
     Discord.Intents.FLAGS.GUILD_MESSAGES,
     Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
-    //Discord.Intents.FLAGS.GUILD_MESSAGE_TYPING,
+    Discord.Intents.FLAGS.GUILD_MESSAGE_TYPING,
     Discord.Intents.FLAGS.DIRECT_MESSAGES,
     Discord.Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
-    //Discord.Intents.FLAGS.DIRECT_MESSAGE_TYPING
+    Discord.Intents.FLAGS.DIRECT_MESSAGE_TYPING
   ],
   presence: {
     activities: [{name: `${config.status.text}`.replace("{prefix}", config.prefix), type: config.status.type, url: config.status.url}],
-    status: "online"
+    status: "dnd"
   }
 });
 
@@ -138,6 +138,8 @@ function requirehandlers(){
   });
 }requirehandlers();
 
+//24/7
+require('./server')();
 
 /**********************************************************
  * @param {9} Login_to_the_Bot

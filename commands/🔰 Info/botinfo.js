@@ -19,7 +19,7 @@ module.exports = {
     
     try{
       let tempmsg = await message.reply({embeds: [new Discord.MessageEmbed().setColor(es.color)
-      .setAuthor(client.la[ls].cmds.info.botinfo.loading, "https://cdn.discordapp.com/emojis/756773010123522058.gif", "https://discord.gg/milrato")]})
+      .setAuthor(client.la[ls].cmds.info.botinfo.loading, "https://cdn.discordapp.com/emojis/756773010123522058.gif", global.dc)]})
       cpuStat.usagePercent(function (e, percent, seconds) {
           if (e) {
               return console.log(e.stack ? String(e.stack).grey : String(e).grey);
@@ -39,7 +39,7 @@ module.exports = {
             .addField(client.la[ls].cmds.info.botinfo.field1.title, handlemsg(client.la[ls].cmds.info.botinfo.field1.value, {totalGuilds: totalGuilds, totalMembers: totalMembers, connections: connectedchannelsamount, connectedchannelsamount: connectedchannelsamount}), true)
             .addField(client.la[ls].cmds.info.botinfo.field2.title, `\`\`\`yml\nNode.js: ${process.version}\nDiscord.js: v${Discord.version}\nEnmap: v5.8.4\`\`\``, true)
             .addField(client.la[ls].cmds.info.botinfo.field3.title, handlemsg(client.la[ls].cmds.info.botinfo.field3.value, {cpu: percent.toFixed(2), ram: (process.memoryUsage().heapUsed/1024/1024).toFixed(2)}))
-            .addField(client.la[ls].cmds.info.botinfo.field4.title, `\`\`\`yml\nName: Tomato#6966\nID: [442355791412854784]\`\`\``, true)
+            .addField(client.la[ls].cmds.info.botinfo.field4.title, `\`\`\`yml\nName: Fongsi#1557\nID: [678106287820505089]\`\`\``, true)
             .addField(client.la[ls].cmds.info.botinfo.field5.title, handlemsg(client.la[ls].cmds.info.botinfo.field5.value, {invitelink: `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`}))
             .setFooter(client.getFooter(es));
         tempmsg.edit({embeds: [botinfo]});

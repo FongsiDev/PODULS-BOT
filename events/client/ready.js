@@ -29,6 +29,7 @@ module.exports = client => {
       'Plattform:' : `${process.platform} ${process.arch}` ,
       'Memory:' : `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB / ${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)} MB`
     });
+
     
     change_status(client);
     //loop through the status per each 10 minutes
