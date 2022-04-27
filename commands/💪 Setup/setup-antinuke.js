@@ -297,7 +297,7 @@ module.exports = {
         //define the embed
         let MenuEmbed = new Discord.MessageEmbed()
         .setColor(es.color)
-        .setAuthor('Anti Nuke Setup', 'https://cdn.discordapp.com/attachments/820695790170275871/869657327941324860/PS7lwz7HwAAAABJRU5ErkJggg.png', 'https://discord.gg/milrato')
+        .setAuthor('Anti Nuke Setup', 'https://cdn.discordapp.com/attachments/820695790170275871/869657327941324860/PS7lwz7HwAAAABJRU5ErkJggg.png', 'https://discord.gg/FBfymDfrpT')
         .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable3"]))
         let used1 = false;
         //send the menu msg
@@ -392,7 +392,7 @@ module.exports = {
             //define the embed
             let MenuEmbed = new Discord.MessageEmbed()
             .setColor(es.color)
-            .setAuthor('Anti Nuke Settings', 'https://cdn.discordapp.com/attachments/820695790170275871/869657327941324860/PS7lwz7HwAAAABJRU5ErkJggg.png', 'https://discord.gg/milrato')
+            .setAuthor('Anti Nuke Settings', 'https://cdn.discordapp.com/attachments/820695790170275871/869657327941324860/PS7lwz7HwAAAABJRU5ErkJggg.png', 'https://discord.gg/FBfymDfrpT')
             .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable16"]))
             //send the menu msg
             let menumsg = await message.reply({embeds: [MenuEmbed], components: [new MessageActionRow().addComponents(Selection)]})
@@ -900,7 +900,7 @@ module.exports = {
                 collector.stop();
                 menuselection2(menu);
               }
-              else menu?.reply({content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+              else menu?.reply({content: `<:Error:954528313517428757> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
             });
             //Once the Collections ended edit the menu message
             collector.on('end', collected => {
@@ -988,7 +988,7 @@ module.exports = {
               //define the embed
               let MenuEmbed = new Discord.MessageEmbed()
               .setColor(es.color)
-              .setAuthor( 'Anti Nuke Settings',  'https://cdn.discordapp.com/attachments/820695790170275871/869657327941324860/PS7lwz7HwAAAABJRU5ErkJggg.png',  'https://discord.gg/milrato')
+              .setAuthor( 'Anti Nuke Settings',  'https://cdn.discordapp.com/attachments/820695790170275871/869657327941324860/PS7lwz7HwAAAABJRU5ErkJggg.png',  'https://discord.gg/FBfymDfrpT')
               .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable62"]))
               //send the menu msg
               let menumsg = await message.reply({embeds: [MenuEmbed], components: [new MessageActionRow().addComponents(Selection)]})
@@ -1219,7 +1219,7 @@ module.exports = {
                       //define the embed
                       let MenuEmbed = new Discord.MessageEmbed()
                         .setColor(es.color)
-                        .setAuthor('Antinuke Setup', 'https://media.discordapp.net/attachments/820695790170275871/869657327941324860/PS7lwz7HwAAAABJRU5ErkJggg.png', 'https://discord.gg/milrato')
+                        .setAuthor('Antinuke Setup', 'https://media.discordapp.net/attachments/820695790170275871/869657327941324860/PS7lwz7HwAAAABJRU5ErkJggg.png', 'https://discord.gg/FBfymDfrpT')
                         .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-warn"]["variable2"]))
                       let used33 = false;
                       //send the menu msg
@@ -1230,7 +1230,7 @@ module.exports = {
                       client.on('interactionCreate',  (menu) => {
                         if (menu?.message.id === menumsg.id) {
                           if (menu?.user.id === cmduser.id) {
-                            if(used33) return menu?.reply({content: `<:no:833101993668771842> You already selected something, this Selection is now disabled!`, ephemeral: true})
+                            if(used33) return menu?.reply({content: `<:Error:954528313517428757> You already selected something, this Selection is now disabled!`, ephemeral: true})
                             let menuoptiondata = menuoptions.find(v => v.value == menu?.values[0])
                             let menuoptionindex = menuoptions.findIndex(v => v.value == menu?.values[0])
                             if(menu?.values[0] == "Cancel") return menu?.reply(eval(client.la[ls]["cmds"]["setup"]["setup-warn"]["variable3"]))
@@ -1238,7 +1238,7 @@ module.exports = {
                             used33 = true;
                             handle_the_picks_X(menuoptionindex, menuoptiondata)
                           }
-                          else menu?.reply({content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+                          else menu?.reply({content: `<:Error:954528313517428757> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
                         }
                       });
                     }
@@ -1306,7 +1306,7 @@ module.exports = {
                   collector.stop();
                   menuselection3(menu);
                 }
-                else menu?.reply({content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+                else menu?.reply({content: `<:Error:954528313517428757> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
               });
               //Once the Collections ended edit the menu message
               collector.on('end', collected => {
@@ -1567,7 +1567,7 @@ module.exports = {
             collector.stop();
             menuselection(menu);
           }
-          else menu?.reply({content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+          else menu?.reply({content: `<:Error:954528313517428757> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
         });
         //Once the Collections ended edit the menu message
         collector.on('end', collected => {
@@ -1585,12 +1585,3 @@ module.exports = {
     }
   },
 };
-/**
- * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
- * @INFO
- * Work for Milrato Development | https://milrato.eu
- * @INFO
- * Please mention him / Milrato Development, when using this Code!
- * @INFO
- */

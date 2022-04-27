@@ -38,10 +38,10 @@ module.exports = {
       if (json.error) return interaction?.reply({content: client.la[ls].cmds.info.color.invalid + `\n\`\`\`fix\n${json.error}\n\`\`\``, ephemeral: true})
       const embed = new Discord.MessageEmbed()
         .setTitle(eval(client.la[ls]["cmds"]["info"]["color"]["variable1"]))
-        .addField('<:arrow:832598861813776394> **Name**', json.name, true)
-        .addField("<:arrow:832598861813776394> **Hex**", json.hex, true)
-        .addField("<:arrow:832598861813776394> **RGB**", json.rgb, true)
-        .addField(`<:arrow:832598861813776394> **${client.la[ls].cmds.info.color.brightershade}**`, json.brightened, true)
+        .addField('<:Arrow:954675713758359572> **Name**', json.name, true)
+        .addField("<:Arrow:954675713758359572> **Hex**", json.hex, true)
+        .addField("<:Arrow:954675713758359572> **RGB**", json.rgb, true)
+        .addField(`<:Arrow:954675713758359572> **${client.la[ls].cmds.info.color.brightershade}**`, json.brightened, true)
         .setThumbnail(json.color_image)
         .setColor(json.hex)
       interaction?.reply({
@@ -54,10 +54,10 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */

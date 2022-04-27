@@ -49,13 +49,13 @@ module.exports = {
           return message.reply({embeds :[new MessageEmbed()
             .setColor(es.wrongcolor)
             .setFooter(client.getFooter(es))
-            .setTitle(`<:no:833101993668771842> **This Channel is a Thread u can't unlock it!**`)
+            .setTitle(`<:Error:954528313517428757> **This Channel is a Thread u can't unlock it!**`)
           ]});
           if(channel.permissionOverwrites.cache.filter(permission => permission.deny.toArray().includes("SEND_MESSAGES")).size < 1)
             return message.reply({embeds :[new MessageEmbed()
               .setColor(es.wrongcolor)
               .setFooter(client.getFooter(es))
-              .setTitle(`<:no:833101993668771842> **This Channel is not locked!**`)
+              .setTitle(`<:Error:954528313517428757> **This Channel is not locked!**`)
               .setDescription(`This usually means, that the Channel **PERMISSIONS** are so defined, that __all__ of them are ALLOWING to send a Message!`)
             ]});
             await channel.permissionOverwrites.set(
@@ -115,10 +115,10 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://github?.com/Tomato6966/Discord-Js-Handler-Template
+ * Bot Coded by Fongsi#1557 | https://github?.com/Tomato6966/Discord-Js-Handler-Template
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */

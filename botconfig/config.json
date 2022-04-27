@@ -1,39 +1,37 @@
 {
-   "token": "",
-   "prefix": "-",
-   "ownerIDS": [
-      "678106287820505089"
-   ],
-   "memer_api": "fTJLBpkPvyZ",
-   "status": {
-      "text": "{prefix}help | Fongsi",
-      "text2": "Support: https://discord.gg/FBfymDfrpT",
-      "type": "WATCHING",
-      "url": "https://twitch.tv/#"
-   },
-   "clientsettings": {
-      "nodes": [
-         {
-            "host": "node2.getalavalink.tk",
-            "port": 443,
-            "secure": true,
-            "password": "decoders"
-         }
-      ]
-   },
-   "spotify": {
-      "clientSecret": "053469ffeb3844079fab734ebf3090c2",
-      "clientID": "bf5ee2a72bae40ffadc71a47280e5ff9"
-   },
-   "settings": {
-      "leaveOnEmpty_Channel": {
-         "enabled": true,
-         "time_delay": 30000
-      },
-      "LeaveOnEmpty_Queue": {
-         "enabled": true,
-         "time_delay": 30000
-      },
-      "selfDeaf": true
-   }
+  "token": "",
+  "prefix": "-",
+  "ownerIDS": ["678106287820505089"],
+  "memer_api": "fTJLBpkPvyZ",
+  "status": {
+    "text": "{prefix}help | Fongsi",
+    "text2": "Support: https://discord.gg/FBfymDfrpT",
+    "type": "WATCHING",
+    "url": "https://twitch.tv/#"
+  },
+  "clientsettings": {
+    "nodes": [
+      {
+        "host": "dislavalink.gq",
+        "port": 2760,
+        "password": "gemzandmj",
+        "secure": false
+      }
+    ]
+  },
+  "spotify": {
+    "clientSecret": "053469ffeb3844079fab734ebf3090c2",
+    "clientID": "bf5ee2a72bae40ffadc71a47280e5ff9"
+  },
+  "settings": {
+    "leaveOnEmpty_Channel": {
+      "enabled": true,
+      "time_delay": 30000
+    },
+    "LeaveOnEmpty_Queue": {
+      "enabled": true,
+      "time_delay": 30000
+    },
+    "selfDeaf": true
+  }
 }

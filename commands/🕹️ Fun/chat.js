@@ -53,10 +53,10 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://milrato.eue
+ * Bot Coded by Fongsi#1557 | https://poduls.ddns.net/e
  * @INFO
- * Work for Milrato Development | https://discord.gg/milrato
+ * Work for Fongsi Development | https://discord.gg/FBfymDfrpT
  * @INFO
- * Please mention Him / Milrato Development, when using this Code!
+ * Please mention Him / Fongsi Development, when using this Code!
  * @INFO
  */

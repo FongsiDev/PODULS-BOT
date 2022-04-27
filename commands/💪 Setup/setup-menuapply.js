@@ -68,7 +68,7 @@ module.exports = {
         //define the embed
         let MenuEmbed = new Discord.MessageEmbed()
           .setColor(es.color)
-          .setAuthor('Menu Apply Setup', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/envelope_2709-fe0f.png', 'https://discord.gg/milrato')
+          .setAuthor('Menu Apply Setup', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/envelope_2709-fe0f.png', 'https://discord.gg/FBfymDfrpT')
           .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-ticket"]["variable2"]))
           
         //send the menu msg
@@ -92,7 +92,7 @@ module.exports = {
             theDB = client[`menuapply${SetupNumber}`]; //change to the right database
             second_layer()
           } else menu?.reply({
-            content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`,
+            content: `<:Error:954528313517428757> You are not allowed to do that! Only: <@${cmduser.id}>`,
             ephemeral: true
           });
         });
@@ -155,7 +155,7 @@ module.exports = {
         //define the embed
         let MenuEmbed = new Discord.MessageEmbed()
           .setColor(es.color)
-          .setAuthor('Menu Apply Setup', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/envelope_2709-fe0f.png', 'https://discord.gg/milrato')
+          .setAuthor('Menu Apply Setup', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/envelope_2709-fe0f.png', 'https://discord.gg/FBfymDfrpT')
           .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-ticket"]["variable2"]))
           
         //send the menu msg
@@ -177,7 +177,7 @@ module.exports = {
             menu?.deferUpdate();
             handle_the_picks(menu?.values[0], menuoptiondata)
           } else menu?.reply({
-            content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`,
+            content: `<:Error:954528313517428757> You are not allowed to do that! Only: <@${cmduser.id}>`,
             ephemeral: true
           });
         });
@@ -196,7 +196,7 @@ module.exports = {
             let data = theDB.get(message.guild.id, "data");
             let settings = theDB.get(message.guild.id);
             if (!data || data.length < 1) {
-              return message.reply("<:no:833101993668771842> **You need to add at least 1 Open-Apply-Option**")
+              return message.reply("<:Error:954528313517428757> **You need to add at least 1 Open-Apply-Option**")
             }
             let tempmsg = await message.reply({
               embeds: [
@@ -287,17 +287,17 @@ module.exports = {
                   message.reply(`Successfully Setupped the Menu-Apply in <#${channel.id}>`)
                 });
               } else {
-                return message.reply("<:no:833101993668771842> **You did not ping a valid Channel!**")
+                return message.reply("<:Error:954528313517428757> **You did not ping a valid Channel!**")
               }
             } else {
-              return message.reply("<:no:833101993668771842> **You did not enter a Valid Message in Time! CANCELLED!**")
+              return message.reply("<:Error:954528313517428757> **You did not enter a Valid Message in Time! CANCELLED!**")
             }
           }
           break;
           case "Add Apply Option": {
             let data = theDB.get(message.guild.id, "data");
             if (data.length >= 25) {
-              return message.reply("<:no:833101993668771842> **You reached the limit of 25 different Options!** Remove another Option first!")
+              return message.reply("<:Error:954528313517428757> **You reached the limit of 25 different Options!** Remove another Option first!")
             }
             //ask for value and description
             let tempmsg = await message.reply({
@@ -314,11 +314,11 @@ module.exports = {
               time: 90000, errors: ["time"]
             });
             if (collected && collected.first().content) {
-              if (!collected.first().content.includes("++")) return message.reply("<:no:833101993668771842> **Invalid Usage! Please mind the Usage and check the Example**")
+              if (!collected.first().content.includes("++")) return message.reply("<:Error:954528313517428757> **Invalid Usage! Please mind the Usage and check the Example**")
               let value = collected.first().content.split("++")[0].trim().substr(0, 25);
               let index = data.findIndex(v => v.value == value);
               if(index >= 0) {
-                  return message.reply("<:no:833101993668771842> **Options can't have the SAME VALUE!** There is already an Option with that Value!");
+                  return message.reply("<:Error:954528313517428757> **Options can't have the SAME VALUE!** There is already an Option with that Value!");
               }
               let description = collected.first().content.split("++")[1].trim().substr(0, 50);
 
@@ -375,7 +375,7 @@ module.exports = {
             //define the embed
             let MenuEmbed = new Discord.MessageEmbed()
               .setColor(es.color)
-              .setAuthor('Menu Apply Setup', 'https://cdn.discordapp.com/emojis/877653386747605032.png?size=96', 'https://discord.gg/milrato')
+              .setAuthor('Menu Apply Setup', 'https://cdn.discordapp.com/emojis/877653386747605032.png?size=96', 'https://discord.gg/FBfymDfrpT')
               .setDescription("Select which Application System should be started with this Option")
             //send the menu msg
             let menumsg = await message.reply({embeds: [MenuEmbed], components: [new MessageActionRow().addComponents(Selection)]})
@@ -393,12 +393,12 @@ module.exports = {
                 let applySystemExecution = menu?.values[0].split(" ")[0]
                 let index = data.findIndex(v => v.applySystemExecution == applySystemExecution);
                 if(index >= 0) {
-                    return message.reply("<:no:833101993668771842> **Options can't start the Same Apply System!** There is already an Option with that Application System!");
+                    return message.reply("<:Error:954528313517428757> **Options can't start the Same Apply System!** There is already an Option with that Application System!");
                 }
                 
                 var apply_for_here = client[`apply${applySystemExecution == 1 ? "" : applySystemExecution }`]
                 if(!apply_for_here.has(message.guild.id) || !apply_for_here.has(message.guild.id, "QUESTIONS") || apply_for_here.get(message.guild.id, "QUESTIONS").length < 1) 
-                  return message.reply(`<:no:833101993668771842> **The ${applySystemExecution}. Apply System is not setupped / has no Questions, create it first with: \`${prefix}setup-apply\`**`)
+                  return message.reply(`<:Error:954528313517428757> **The ${applySystemExecution}. Apply System is not setupped / has no Questions, create it first with: \`${prefix}setup-apply\`**`)
                 
                 var rermbed = new MessageEmbed()
                   .setColor(es.color)
@@ -465,21 +465,21 @@ module.exports = {
                   });
                 }
               }
-              else menu?.reply({content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+              else menu?.reply({content: `<:Error:954528313517428757> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
             });
             //Once the Collections ended edit the menu message
             collector.on('end', collected => {
               menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:yes:833101995723194437> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
             });
             } else {
-              return message.reply("<:no:833101993668771842> **You did not enter a Valid Message in Time! CANCELLED!**")
+              return message.reply("<:Error:954528313517428757> **You did not enter a Valid Message in Time! CANCELLED!**")
             }
           }
           break;
           case "Remove Apply Option": {
           let data = theDB.get(message.guild.id, "data");
           if (!data || data.length < 1) {
-            return message.reply("<:no:833101993668771842> **There are no Open-Apply-Options to remove**")
+            return message.reply("<:Error:954528313517428757> **There are no Open-Apply-Options to remove**")
           }
           let embed = new MessageEmbed()
             .setColor(es.color)
@@ -545,7 +545,7 @@ module.exports = {
               theDB.set(message.guild.id, data, "data");
               message.reply(`**Successfully removed:**\n>>> ${menu?.values.map(i => `\`${i}\``).join(", ")}\n\nDon't forget to resend the Apply Config-Message!`)
             } else menu?.reply({
-              content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`,
+              content: `<:Error:954528313517428757> You are not allowed to do that! Only: <@${cmduser.id}>`,
               ephemeral: true
             });
           });
@@ -618,10 +618,10 @@ module.exports = {
 };
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */

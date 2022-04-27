@@ -18,7 +18,7 @@ module.exports = {
     try {
       let user = message.mentions.users.first() || client.user;
       if(user) {
-        if(!user.bot) return interaction?.reply({ephemeral: true, content: "<:no:833101993668771842> You can't Invite a Normal user! **IT MUST BE A BOT**"});
+        if(!user.bot) return interaction?.reply({ephemeral: true, content: "<:Error:954528313517428757> You can't Invite a Normal user! **IT MUST BE A BOT**"});
         let button_support_dc = new MessageButton().setStyle('LINK').setLabel(handlemsg(client.la[ls].cmds.info.invite.buttons.server)).setURL("https://discord.com/gg/9jjwos")
         let button_invite = new MessageButton().setStyle('LINK').setLabel("Invite " + user.username).setURL(`https://discord.com/api/oauth2/authorize?client_id=${user.id}&permissions=8&scope=bot%20applications.commands`)
         //array of all buttons
@@ -46,10 +46,10 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */

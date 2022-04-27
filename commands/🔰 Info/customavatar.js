@@ -48,11 +48,11 @@ module.exports = {
         let embed = new Discord.MessageEmbed()
           .setAuthor(handlemsg(client.la[ls].cmds.info.avatar.author, {
             usertag: user.tag
-          }), customavatar, "https://discord.gg/milrato")
+          }), customavatar, "https://discord.gg/FBfymDfrpT")
           .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
-          .addField("<:arrow:832598861813776394> PNG", `[\`LINK\`](${customavatar})`, true)
-          .addField("<:arrow:832598861813776394> JPEG", `[\`LINK\`](${customavatar.replace("png", "jpg").replace("gif", "jpg")})`, true)
-          .addField("<:arrow:832598861813776394> WEBP", `[\`LINK\`](${customavatar.replace("png", "webp").replace("gif", "webp")})`, true)
+          .addField("<:Arrow:954675713758359572> PNG", `[\`LINK\`](${customavatar})`, true)
+          .addField("<:Arrow:954675713758359572> JPEG", `[\`LINK\`](${customavatar.replace("png", "jpg").replace("gif", "jpg")})`, true)
+          .addField("<:Arrow:954675713758359572> WEBP", `[\`LINK\`](${customavatar.replace("png", "webp").replace("gif", "webp")})`, true)
           .setURL(customavatar)
           .setFooter(client.getFooter(es))
           .setImage(customavatar);
@@ -66,9 +66,9 @@ module.exports = {
           }), user.displayAvatarURL({
             dynamic: true
           }), global.dc)          .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
-          .addField("<:arrow:832598861813776394> PNG", `[\`LINK\`](${user.displayAvatarURL({format: "png"})})`, true)
-          .addField("<:arrow:832598861813776394> JPEG", `[\`LINK\`](${user.displayAvatarURL({format: "jpg"})})`, true)
-          .addField("<:arrow:832598861813776394> WEBP", `[\`LINK\`](${user.displayAvatarURL({format: "webp"})})`, true)
+          .addField("<:Arrow:954675713758359572> PNG", `[\`LINK\`](${user.displayAvatarURL({format: "png"})})`, true)
+          .addField("<:Arrow:954675713758359572> JPEG", `[\`LINK\`](${user.displayAvatarURL({format: "jpg"})})`, true)
+          .addField("<:Arrow:954675713758359572> WEBP", `[\`LINK\`](${user.displayAvatarURL({format: "webp"})})`, true)
           .setURL(user.displayAvatarURL({
             dynamic: true
           }))
@@ -97,10 +97,10 @@ module.exports = {
 }
 /*
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */

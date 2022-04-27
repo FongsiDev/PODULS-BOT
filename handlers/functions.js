@@ -143,7 +143,7 @@ function isValidURL(string) {
   return url;
 };
 function GetUser(message, arg){
-  var errormessage = "<:no:833101993668771842> I failed finding that User...";
+  var errormessage = "<:Error:954528313517428757> I failed finding that User...";
   return new Promise(async (resolve, reject) => {
     var args = arg, client = message.client;
     if(!client || !message) return reject("CLIENT IS NOT DEFINED")
@@ -158,11 +158,11 @@ function GetUser(message, arg){
     }
     /**
      * @INFO
-     * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+     * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
      * @INFO
-     * Work for Milrato Development | https://milrato.eu
+     * Work for Fongsi Development | https://poduls.ddns.net/
      * @INFO
-     * Please mention him / Milrato Development, when using this Code!
+     * Please mention him / Fongsi Development, when using this Code!
      * @INFO
      */
     
@@ -187,7 +187,7 @@ function GetUser(message, arg){
   })
 }
 function GetRole(message, arg){
-  var errormessage = "<:no:833101993668771842> I failed finding that Role...";
+  var errormessage = "<:Error:954528313517428757> I failed finding that Role...";
   return new Promise(async (resolve, reject) => {
     var args = arg, client = message.client;
     if(!client || !message) return reject("CLIENT IS NOT DEFINED")
@@ -213,7 +213,7 @@ function GetRole(message, arg){
   })
 }
 function GetGlobalUser(message, arg){
-  var errormessage = "<:no:833101993668771842> I failed finding that User...";
+  var errormessage = "<:Error:954528313517428757> I failed finding that User...";
   return new Promise(async (resolve, reject) => {
     var args = arg, client = message.client;
     if(!client || !message) return reject("CLIENT IS NOT DEFINED")
@@ -414,11 +414,11 @@ async function edit_Roster_msg(client, guild, the_roster_db) {
         }
         /**
          * @INFO
-         * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+         * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
          * @INFO
-         * Work for Milrato Development | https://milrato.eu
+         * Work for Fongsi Development | https://poduls.ddns.net/
          * @INFO
-         * Please mention him / Milrato Development, when using this Code!
+         * Please mention him / Fongsi Development, when using this Code!
          * @INFO
          */
         
@@ -1390,11 +1390,11 @@ async function swap_pages(client, message, description, TITLE) {
 
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */
 
@@ -1454,7 +1454,7 @@ async function swap_pages(client, message, description, TITLE) {
   //array of all embeds, here simplified just 10 embeds with numbers 0 - 9
   collector.on('collect', async b => {
       if(b?.user.id !== message.author.id)
-        return b?.reply({content: `<:no:833101993668771842> **Only the one who typed ${prefix}help is allowed to react!**`, ephemeral: true})
+        return b?.reply({content: `<:Error:954528313517428757> **Only the one who typed ${prefix}help is allowed to react!**`, ephemeral: true})
         //page forward
         if(b?.customId == "1") {
           //b?.reply("***Swapping a PAGE FORWARD***, *please wait 2 Seconds for the next Input*", true)
@@ -1513,7 +1513,7 @@ async function swap_pages2(client, message, embeds) {
   //array of all embeds, here simplified just 10 embeds with numbers 0 - 9
   collector.on('collect', async b => {
       if(b?.user.id !== message.author.id)
-        return b?.reply({content: `<:no:833101993668771842> **Only the one who typed ${prefix}help is allowed to react!**`, ephemeral: true})
+        return b?.reply({content: `<:Error:954528313517428757> **Only the one who typed ${prefix}help is allowed to react!**`, ephemeral: true})
         //page forward
         if(b?.customId == "1") {
           //b?.reply("***Swapping a PAGE FORWARD***, *please wait 2 Seconds for the next Input*", true)
@@ -1572,7 +1572,7 @@ async function swap_pages2_interaction(client, interaction, embeds) {
   //array of all embeds, here simplified just 10 embeds with numbers 0 - 9
   collector.on('collect', async b => {
       if(b?.user.id !== cmduser.id)
-        return b?.reply({content: `<:no:833101993668771842> **Only the one who typed ${prefix}help is allowed to react!**`, ephemeral: true})
+        return b?.reply({content: `<:Error:954528313517428757> **Only the one who typed ${prefix}help is allowed to react!**`, ephemeral: true})
         //page forward
         if(b?.customId == "1") {
           //b?.reply("***Swapping a PAGE FORWARD***, *please wait 2 Seconds for the next Input*", true)
@@ -1622,11 +1622,11 @@ function databasing(client, guildid, userid) {
       })
       /**
        * @INFO
-       * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+       * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
        * @INFO
-       * Work for Milrato Development | https://milrato.eu
+       * Work for Fongsi Development | https://poduls.ddns.net/
        * @INFO
-       * Please mention him / Milrato Development, when using this Code!
+       * Please mention him / Fongsi Development, when using this Code!
        * @INFO
        */
       client.social_log.ensure(guildid, {
@@ -2107,11 +2107,11 @@ function databasing(client, guildid, userid) {
 
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */
 
@@ -2595,11 +2595,11 @@ async function create_transcript(message, client, msglimit) {
 }
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */
 
@@ -2955,11 +2955,11 @@ const channelInfo = (url, options = {}) => __awaiter(void 0, void 0, void 0, fun
     }
     /**
      * @INFO
-     * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+     * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
      * @INFO
-     * Work for Milrato Development | https://milrato.eu
+     * Work for Fongsi Development | https://poduls.ddns.net/
      * @INFO
-     * Please mention him / Milrato Development, when using this Code!
+     * Please mention him / Fongsi Development, when using this Code!
      * @INFO
      */
     

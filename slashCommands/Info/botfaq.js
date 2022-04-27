@@ -94,7 +94,7 @@ module.exports = {
       //define the embed
       let MenuEmbed = new Discord.MessageEmbed()
       .setColor(es.color)
-      .setAuthor(client.la[ls].cmds.info.botfaq.menuembed.title, client.user.displayAvatarURL(), "https://discord.gg/milrato")
+      .setAuthor(client.la[ls].cmds.info.botfaq.menuembed.title, client.user.displayAvatarURL(), "https://discord.gg/FBfymDfrpT")
       .setDescription(client.la[ls].cmds.info.botfaq.menuembed.description)
       //send the menu msg
       await interaction?.reply({embeds: [MenuEmbed], components: [Selection], ephemeral: true})
@@ -103,7 +103,7 @@ module.exports = {
         let menuoptiondata = menuoptions.find(v=>v.value.substr(0, 25) == interaction?.values[0])
         interaction?.reply({embeds: [new Discord.MessageEmbed()
         .setColor(es.color)
-        .setAuthor(client.la[ls].cmds.info.botfaq.menuembed.title, client.user.displayAvatarURL(), "https://discord.gg/milrato")
+        .setAuthor(client.la[ls].cmds.info.botfaq.menuembed.title, client.user.displayAvatarURL(), "https://discord.gg/FBfymDfrpT")
         .setDescription(menuoptiondata.replymsg)], ephemeral: true});
       }
       //Event
@@ -120,10 +120,10 @@ module.exports = {
 };
 /**
   * @INFO
-  * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+  * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
   * @INFO
-  * Work for Milrato Development | https://milrato.eu
+  * Work for Fongsi Development | https://poduls.ddns.net/
   * @INFO
-  * Please mention him / Milrato Development, when using this Code!
+  * Please mention him / Fongsi Development, when using this Code!
   * @INFO
 */

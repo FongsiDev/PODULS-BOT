@@ -696,7 +696,7 @@ module.exports = {
             }\`] 💸 Economy Commands 💸 | ${
               settings.ECONOMY
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -753,7 +753,7 @@ module.exports = {
             }\`] 🏫 School Commands 🏫 | ${
               settings.SCHOOL
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -799,7 +799,7 @@ module.exports = {
             }\`] 🎶 Music Commands 🎶 | ${
               settings.MUSIC
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -857,7 +857,7 @@ module.exports = {
             }\`] 👀 Filter Commands 👀 | ${
               settings.FILTER
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -880,7 +880,7 @@ module.exports = {
             }\`] ⚜️ Custom Queue(s) Commands ⚜️ | ${
               settings.CUSTOMQUEUE
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -1155,7 +1155,7 @@ module.exports = {
             }\`] ⌨️ Programming Commands ⌨️ | ${
               settings.PROGRAMMING
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -1177,7 +1177,7 @@ module.exports = {
             }\`] 📈 Ranking Commands 📈 | ${
               settings.RANKING
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -1220,7 +1220,7 @@ module.exports = {
             }\`] 🔊 Soundboard Commands 🔊 | ${
               settings.SOUNDBOARD
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -1243,7 +1243,7 @@ module.exports = {
             }\`] 🎤 Voice Commands 🎤 | ${
               settings.VOICE
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -1273,7 +1273,7 @@ module.exports = {
             }\`] 🕹️ Fun Commands 🕹️ | ${
               settings.FUN
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -1329,7 +1329,7 @@ module.exports = {
             }\`] 🎮 Mini Games Commands 🎮 | ${
               settings.MINIGAMES
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .addField("\u200b", "__**Sub-Categorized Commands:**__")
@@ -1389,7 +1389,7 @@ module.exports = {
             }\`] 😳 Anime Commands 😳 | ${
               settings.ANIME
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -1433,7 +1433,7 @@ module.exports = {
             }\`] 🔞 NSFW Commands 🔞 | ${
               settings.NSFW
                 ? "<a:yes:833101995723194437> ENABLED"
-                : "<:no:833101993668771842> DISABLED"
+                : "<:Error:954528313517428757> DISABLED"
             }`
           )
           .setDescription(
@@ -1526,10 +1526,10 @@ module.exports = {
 };
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */

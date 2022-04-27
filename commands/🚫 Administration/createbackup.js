@@ -16,13 +16,13 @@ module.exports = {
     run: async (client, message, args, cmduser, text, prefix) => {
     
         if(!message.guild.me.permissions.has(Discord.Permissions.FLAGS.ADMINISTRATOR)){
-            return message.reply("<:no:833101993668771842> **I am missing the ADMINISTRATOR Permission!**")
+            return message.reply("<:Error:954528313517428757> **I am missing the ADMINISTRATOR Permission!**")
         }
         let owner = await message.guild.fetchOwner().catch(e=>{
             return message.reply("Could not get owner of target guild")
         })
         if(owner.id != cmduser.id) {
-            return message.reply(`<:no:833101993668771842> **You need to be the Owner of this Server!**`)
+            return message.reply(`<:Error:954528313517428757> **You need to be the Owner of this Server!**`)
         }
         let es = client.settings.get(message.guild.id, "embed");let ls = client.settings.get(message.guild.id, "language")
         let adminroles = client.settings.get(message.guild.id, "adminroles")

@@ -108,7 +108,7 @@ for(let i = 1; i<=25; i++) {
         user.send({embeds: [new Discord.MessageEmbed()
             .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
             .setDescription(qu)
-            .setAuthor(client.getAuthor(`Question ${counter + 1} / ${Questions.length}`, client.user.displayAvatarURL(), "https://discord.gg/milrato"))
+            .setAuthor(client.getAuthor(`Question ${counter + 1} / ${Questions.length}`, client.user.displayAvatarURL(), "https://discord.gg/FBfymDfrpT"))
             .setFooter(client.getFooter(es))
         ]}).then(msg => {
             msg.channel.awaitMessages({ filter: m => m, 

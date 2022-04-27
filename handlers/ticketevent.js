@@ -117,7 +117,7 @@ module.exports = client => {
                 }); //collector for 5 seconds
                 collector.on('collect', async b => {
                     if (b?.user.id !== user.id)
-                        return b?.reply(`<:no:833101993668771842> **Only the one who typed ${prefix}help is allowed to react!**`, true)
+                        return b?.reply(`<:Error:954528313517428757> **Only the one who typed ${prefix}help is allowed to react!**`, true)
 
                     //page forward
                     if (b?.customId == "ticket_verify") {
@@ -236,7 +236,7 @@ module.exports = client => {
                     embeds: [new MessageEmbed()
                         .setColor(es.wrongcolor)
                         .setFooter(client.getFooter(es))
-                        .setTitle("<:no:833101993668771842> You are not allowed to delete this Ticket")
+                        .setTitle("<:Error:954528313517428757> You are not allowed to delete this Ticket")
                         .setDescription(`${adminroles.length > 0 ? "You need one of those Roles: " + adminroles.map(role => `<@&${role}>`).join(" | ") + cmdrole.join(" | ") + theadminroles.join(" | ")  : `No Admin Roles Setupped yet! Do it with: \`${prefix}setup-admin\` You can also add Ticket only Roles with \`${prefix}setup-ticket\``}`)
                         .addField("Ticket Specific Role(s)/User(s):", `${ticketspecific.join(", ")}`.substr(0, 1024))
                     ]
@@ -256,7 +256,7 @@ module.exports = client => {
             }); //collector for 5 seconds
             collector.on('collect', async b => {
                 if (b?.user.id !== user.id)
-                    return b?.reply(`<:no:833101993668771842> **Only the one who typed ${prefix}help is allowed to react!**`, true)
+                    return b?.reply(`<:Error:954528313517428757> **Only the one who typed ${prefix}help is allowed to react!**`, true)
 
 
                 //page forward
@@ -511,7 +511,7 @@ module.exports = client => {
                     embeds: [new MessageEmbed()
                         .setColor(es.wrongcolor)
                         .setFooter(client.getFooter(es))
-                        .setTitle("<:no:833101993668771842> You are not allowed to add/remove Users to/from this Ticket")
+                        .setTitle("<:Error:954528313517428757> You are not allowed to add/remove Users to/from this Ticket")
                         .setDescription(`${adminroles.length > 0 ? "You need one of those Roles: " + adminroles.map(role => `<@&${role}>`).join(" | ") + cmdrole.join(" | ") + theadminroles.join(" | ")  : `No Admin Roles Setupped yet! Do it with: \`${prefix}setup-admin\` You can also add Ticket only Roles with \`${prefix}setup-ticket\``}`)
                     ]
                 });
@@ -704,7 +704,7 @@ module.exports = client => {
                     embeds: [new MessageEmbed()
                         .setColor(es.wrongcolor)
                         .setFooter(client.getFooter(es))
-                        .setTitle("<:no:833101993668771842> You are not allowed to add/remove Roles to/from this Ticket")
+                        .setTitle("<:Error:954528313517428757> You are not allowed to add/remove Roles to/from this Ticket")
                         .setDescription(`${adminroles.length > 0 ? "You need one of those Roles: " + adminroles.map(role => `<@&${role}>`).join(" | ") + cmdrole.join(" | ") + theadminroles.join(" | ")  : `No Admin Roles Setupped yet! Do it with: \`${prefix}setup-admin\` You can also add Ticket only Roles with \`${prefix}setup-ticket\``}`)
                     ]
                 });
@@ -893,7 +893,7 @@ module.exports = client => {
                     embeds: [new MessageEmbed()
                         .setColor(es.wrongcolor)
                         .setFooter(client.getFooter(es))
-                        .setTitle("<:no:833101993668771842> You are not allowed to claim this Ticket")
+                        .setTitle("<:Error:954528313517428757> You are not allowed to claim this Ticket")
                         .setDescription(`${adminroles.length > 0 ? "You need one of those Roles: " + adminroles.map(role => `<@&${role}>`).join(" | ") + cmdrole.join(" | ") + theadminroles.join(" | ")  : `No Admin Roles Setupped yet! Do it with: \`${prefix}setup-admin\` You can also add Ticket only Roles with \`${prefix}setup-ticket\``}`)
                     ]
                 });
@@ -986,7 +986,7 @@ module.exports = client => {
                       {
                         let data = client.setups.get(ticketchannel.id, "ticketdata");
                         if(data.state != "closed" && data.menutickettype == 1){
-                          return interaction?.reply({content: `<:no:833101993668771842> **You already have an Ticket!** <#${ticketchannel.id}>`, ephemeral: true});
+                          return interaction?.reply({content: `<:Error:954528313517428757> **You already have an Ticket!** <#${ticketchannel.id}>`, ephemeral: true});
                         }
                       }
                     } catch {
@@ -1125,14 +1125,14 @@ module.exports = client => {
                     .setFooter(client.getFooter(`To close/manage this ticket react with the buttons\nYou can also type: ${client.settings.get(guild.id, "prefix")}ticket`, es.footericon))
                     .setAuthor(client.getAuthor(`Ticket for: ${user.tag}`, user.displayAvatarURL({
                     dynamic: true
-                    }), "https://discord.gg/milrato"))
+                    }), "https://discord.gg/FBfymDfrpT"))
                     .setDescription(replyMsg.replace(/\{user\}/igu, `${user}`).substr(0, 2000))
                 var ticketembeds = [ticketembed]
                 if(settings.claim.enabled){
                     var claimEmbed = new MessageEmbed()
                     .setColor("ORANGE").setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
                     .setFooter(client.getFooter(es))
-                    .setAuthor(client.getAuthor(`A Staff Member will claim the Ticket soon!`, "https://cdn.discordapp.com/emojis/833101350623117342.gif?size=44", "https://discord.gg/milrato"))
+                    .setAuthor(client.getAuthor(`A Staff Member will claim the Ticket soon!`, "https://cdn.discordapp.com/emojis/833101350623117342.gif?size=44", "https://discord.gg/FBfymDfrpT"))
                     .setDescription(settings.claim.messageOpen.replace(/\{user\}/igu, `${user}`).substr(0, 2000))
                     ticketembeds.push(claimEmbed)
                 }
@@ -1241,7 +1241,7 @@ module.exports = client => {
                       {
                         let data = client.setups.get(ticketchannel.id, "ticketdata");
                         if(data.state != "closed" && data.menutickettype == 2){
-                          return interaction?.reply({content: `<:no:833101993668771842> **You already have an Ticket!** <#${ticketchannel.id}>`, ephemeral: true});
+                          return interaction?.reply({content: `<:Error:954528313517428757> **You already have an Ticket!** <#${ticketchannel.id}>`, ephemeral: true});
                         }
                       }
                     } catch {
@@ -1381,14 +1381,14 @@ module.exports = client => {
                     .setFooter(client.getFooter(`To close/manage this ticket react with the buttons\nYou can also type: ${client.settings.get(guild.id, "prefix")}ticket`, es.footericon))
                     .setAuthor(client.getAuthor(`Ticket for: ${user.tag}`, user.displayAvatarURL({
                     dynamic: true
-                    }), "https://discord.gg/milrato"))
+                    }), "https://discord.gg/FBfymDfrpT"))
                     .setDescription(replyMsg.replace(/\{user\}/igu, `${user}`).substr(0, 2000))
                 var ticketembeds = [ticketembed]
                 if(settings.claim.enabled){
                     var claimEmbed = new MessageEmbed()
                     .setColor("ORANGE").setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
                     .setFooter(client.getFooter(es))
-                    .setAuthor(client.getAuthor(`A Staff Member will claim the Ticket soon!`, "https://cdn.discordapp.com/emojis/833101350623117342.gif?size=44", "https://discord.gg/milrato"))
+                    .setAuthor(client.getAuthor(`A Staff Member will claim the Ticket soon!`, "https://cdn.discordapp.com/emojis/833101350623117342.gif?size=44", "https://discord.gg/FBfymDfrpT"))
                     .setDescription(settings.claim.messageOpen.replace(/\{user\}/igu, `${user}`).substr(0, 2000))
                     ticketembeds.push(claimEmbed)
                 }
@@ -1497,7 +1497,7 @@ module.exports = client => {
                       {
                         let data = client.setups.get(ticketchannel.id, "ticketdata");
                         if(data.state != "closed" && data.menutickettype == 3){
-                          return interaction?.reply({content: `<:no:833101993668771842> **You already have an Ticket!** <#${ticketchannel.id}>`, ephemeral: true});
+                          return interaction?.reply({content: `<:Error:954528313517428757> **You already have an Ticket!** <#${ticketchannel.id}>`, ephemeral: true});
                         }
                       }
                     } catch {
@@ -1635,14 +1635,14 @@ module.exports = client => {
                     .setFooter(client.getFooter(`To close/manage this ticket react with the buttons\nYou can also type: ${client.settings.get(guild.id, "prefix")}ticket`, es.footericon))
                     .setAuthor(client.getAuthor(`Ticket for: ${user.tag}`, user.displayAvatarURL({
                     dynamic: true
-                    }), "https://discord.gg/milrato"))
+                    }), "https://discord.gg/FBfymDfrpT"))
                     .setDescription(replyMsg.replace(/\{user\}/igu, `${user}`).substr(0, 2000))
                 var ticketembeds = [ticketembed]
                 if(settings.claim.enabled){
                     var claimEmbed = new MessageEmbed()
                     .setColor("ORANGE").setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
                     .setFooter(client.getFooter(es))
-                    .setAuthor(client.getAuthor(`A Staff Member will claim the Ticket soon!`, "https://cdn.discordapp.com/emojis/833101350623117342.gif?size=44", "https://discord.gg/milrato"))
+                    .setAuthor(client.getAuthor(`A Staff Member will claim the Ticket soon!`, "https://cdn.discordapp.com/emojis/833101350623117342.gif?size=44", "https://discord.gg/FBfymDfrpT"))
                     .setDescription(settings.claim.messageOpen.replace(/\{user\}/igu, `${user}`).substr(0, 2000))
                     ticketembeds.push(claimEmbed)
                 }

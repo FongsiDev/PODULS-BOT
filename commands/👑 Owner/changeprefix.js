@@ -48,7 +48,7 @@ module.exports = {
         return message.channel.send({embeds: [new MessageEmbed()
           .setFooter(client.getFooter(es))
           .setColor(es.wrongcolor)
-          .setTitle(`<:no:833101993668771842> Something went wrong`)
+          .setTitle(`<:Error:954528313517428757> Something went wrong`)
           .setDescription(`\`\`\`${String(e.message ? e.message : e).substr(0, 2000)}\`\`\``)
         ]})
       }
@@ -70,12 +70,3 @@ module.exports = {
   }
   }
 };
-/**
-  * @INFO
-  * Bot Coded by Tomato#6966 | https://discord.gg/milrato
-  * @INFO
-  * Work for Milrato Development | https://milrato.eu
-  * @INFO
-  * Please mention him / Milrato Development, when using this Code!
-  * @INFO
-*/

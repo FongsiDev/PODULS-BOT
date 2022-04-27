@@ -271,19 +271,19 @@ module.exports = {
             .setColor(es.color)
             .setAuthor("Setup-Systems | (1/3) [A-C]", 
             "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/gear_2699.png",
-            "https://discord.gg/milrato")
+            "https://discord.gg/FBfymDfrpT")
             .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup"]["variable1"]))
           let MenuEmbed2 = new Discord.MessageEmbed()
             .setColor(es.color)
             .setAuthor("Setup-Systems | (2/3) [C-R]", 
             "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/gear_2699.png",
-            "https://discord.gg/milrato")
+            "https://discord.gg/FBfymDfrpT")
             .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup"]["variable2"]))
           let MenuEmbed3 = new Discord.MessageEmbed()
             .setColor(es.color)
             .setAuthor("Setup-Systems | (3/3) [R-Z]", 
             "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/gear_2699.png",
-            "https://discord.gg/milrato")
+            "https://discord.gg/FBfymDfrpT")
             .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup"]["variable3"]))
           //send the menu msg
           let menumsg1 = await message.reply({embeds: [MenuEmbed1], components: [new MessageActionRow().addComponents(Selection1)]})
@@ -303,21 +303,21 @@ module.exports = {
                 menumsg1.edit({components: [], embeds: menumsg1.embeds}).catch(() => {});
                 menuselection(menu);
               }
-              else menu?.reply({content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+              else menu?.reply({content: `<:Error:954528313517428757> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
             }
             if (menu?.message.id === menumsg2.id) {
               if (menu?.user.id === cmduser.id) {
                 menumsg2.edit({components: [], embeds: menumsg2.embeds}).catch(() => {});
                 menuselection(menu);
               }
-              else menu?.reply({content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+              else menu?.reply({content: `<:Error:954528313517428757> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
             }
             if (menu?.message.id === menumsg3.id) {
               if (menu?.user.id === cmduser.id) {
                 menumsg3.edit({components: [], embeds: menumsg3.embeds}).catch(() => {});
                 menuselection(menu);
               }
-              else menu?.reply({content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+              else menu?.reply({content: `<:Error:954528313517428757> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
             }
           });
         }
@@ -337,10 +337,10 @@ module.exports = {
 };
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */

@@ -78,10 +78,10 @@ const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
 };
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://github?.com/Tomato6966/discord-js-lavalink-Music-Bot-erela-js
+ * Bot Coded by Fongsi#1557 | https://github?.com/Tomato6966/discord-js-lavalink-Music-Bot-erela-js
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention Him / Milrato Development, when using this Code!
+ * Please mention Him / Fongsi Development, when using this Code!
  * @INFO
  */

@@ -17,9 +17,9 @@ module.exports = {
 		let es = client.settings.get(message.guild.id, "embed");let ls = client.settings.get(message.guild.id, "language")
 		
 		try {	
-			let button_public_invite = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.github?.buttons.invite).setURL("https://discord.com/api/oauth2/authorize?client_id=734513783338434591&permissions=8&scope=bot%20applications.commands")
-			let button_support_dc = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.github?.buttons.dc).setURL("https://discord.gg/milrato")
-			let button_invite = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.github?.buttons.botlist).setURL(`https://botlist.milrato.eu`)
+			let button_public_invite = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.github?.buttons.invite).setURL("https://discord.com/api/oauth2/authorize?client_id=965191378059550750&permissions=8&scope=bot%20applications.commands")
+			let button_support_dc = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.github?.buttons.dc).setURL("https://discord.gg/FBfymDfrpT")
+			let button_invite = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.github?.buttons.botlist).setURL(`https://dblist.ddns.net`)
 			const allbuttons = [new MessageActionRow().addComponents([button_public_invite, button_support_dc, button_invite])]
 			message.reply({embeds: [new MessageEmbed()
 				.setColor(es.color)
@@ -27,7 +27,7 @@ module.exports = {
 				.setTimestamp()
 				.setThumbnail("https://cdn.discordapp.com/avatars/442355791412854784/df7b527a701d9a1ab6d73213576fe295.webp?size=1024")
 				.setTitle(client.la[ls].cmds.info.github?.title)
-				.setURL("https://milrato.eu")
+				.setURL("https://poduls.ddns.net/")
 				.setDescription(client.la[ls].cmds.info.github?.description)],
 components: allbuttons
 			}).catch(error => console.log(error));
@@ -44,10 +44,10 @@ components: allbuttons
 }
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */

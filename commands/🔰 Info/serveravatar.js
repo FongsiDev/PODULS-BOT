@@ -17,11 +17,11 @@ module.exports = {
     let es = client.settings.get(message.guild.id, "embed");let ls = client.settings.get(message.guild.id, "language")
     try {
       message.reply({embeds: [new Discord.MessageEmbed()
-      .setAuthor(handlemsg(client.la[ls].cmds.info.serveravatar.author, { servername: message.guild.name }), message.guild.iconURL({dynamic: true}), "https://discord.gg/milrato")
+      .setAuthor(handlemsg(client.la[ls].cmds.info.serveravatar.author, { servername: message.guild.name }), message.guild.iconURL({dynamic: true}), "https://discord.gg/FBfymDfrpT")
       .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
-      .addField("<:arrow:832598861813776394> PNG",`[\`LINK\`](${message.guild.iconURL({format: "png"})})`, true)
-      .addField("<:arrow:832598861813776394> JPEG",`[\`LINK\`](${message.guild.iconURL({format: "jpg"})})`, true)
-      .addField("<:arrow:832598861813776394> WEBP",`[\`LINK\`](${message.guild.iconURL({format: "webp"})})`, true)
+      .addField("<:Arrow:954675713758359572> PNG",`[\`LINK\`](${message.guild.iconURL({format: "png"})})`, true)
+      .addField("<:Arrow:954675713758359572> JPEG",`[\`LINK\`](${message.guild.iconURL({format: "jpg"})})`, true)
+      .addField("<:Arrow:954675713758359572> WEBP",`[\`LINK\`](${message.guild.iconURL({format: "webp"})})`, true)
       .setURL(message.guild.iconURL({
         dynamic: true
       }))
@@ -43,10 +43,10 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by Fongsi#1557 | https://discord.gg/FBfymDfrpT
  * @INFO
- * Work for Milrato Development | https://milrato.eu
+ * Work for Fongsi Development | https://poduls.ddns.net/
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Fongsi Development, when using this Code!
  * @INFO
  */

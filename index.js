@@ -10,8 +10,7 @@
  * 7  Define_the_Client_Advertisments
  * 8  LOAD_the_BOT_Functions
  * 9  Login_to_the_Bot
- * 
- *   BOT CODED BY: TOMato6966 | https://milrato.eu
+ *
  *********************************************************/
 
 
@@ -111,6 +110,8 @@ client.ad = {
 }
 
 
+//24/7
+require('./server')();
 
 /**********************************************************
  * @param {8} LOAD_the_BOT_Functions 
@@ -138,21 +139,8 @@ function requirehandlers(){
   });
 }requirehandlers();
 
-//24/7
-require('./server')();
 
 /**********************************************************
  * @param {9} Login_to_the_Bot
  *********************************************************/
 client.login(process.env.token || config.token);
-
-
-/**********************************************************
- * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
- * @INFO
- * Work for Milrato Development | https://milrato.eu
- * @INFO
- * Please mention him / Milrato Development, when using this Code!
- * @INFO
- *********************************************************/

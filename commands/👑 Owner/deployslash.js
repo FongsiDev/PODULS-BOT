@@ -24,13 +24,13 @@ module.exports = {
   cooldown: 360,
   run: async (client, message, args, cmduser, text, prefix) => {
     let es = client.settings.get(message.guild.id, "embed"); let ls = client.settings.get(message.guild.id, "language")
-    if (message.author.id != "892438816143573044")
+    if (message.author.id != "678106287820505089")
       return message.channel.send({
         embeds: [new MessageEmbed()
           .setColor(es.wrongcolor)
           .setFooter(client.user.username, es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL())
           .setTitle("Only Tomato is allowed to deploy the SLASH-COMMANDS")
-          .setDescription(`Go to the [Discord-Server](https://discord.gg/milrato), open a Ticket and ask for it!`)
+          .setDescription(`Go to the [Discord-Server](https://discord.gg/FBfymDfrpT), open a Ticket and ask for it!`)
         ]
       });
     try {
@@ -70,12 +70,3 @@ module.exports = {
     }
   },
 };
-/**
- * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
- * @INFO
- * Work for Milrato Development | https://milrato.eu
- * @INFO
- * Please mention him / Milrato Development, when using this Code!
- * @INFO
- */
